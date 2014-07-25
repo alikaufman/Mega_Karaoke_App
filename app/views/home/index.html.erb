@@ -1,0 +1,8 @@
+<h1>Home</h1>
+<h2><%= current_user.first_name %></h2>
+<ul>
+<% current_user.songs.each do |song| %>
+  <li><%= song.artist %> '<%= song.title %>' </li>
+<% end %>
+</ul>
+<%= link_to 'Songs', songs_path %>
