@@ -1,11 +1,12 @@
 == README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mega_Karaoke_App is a small application to help manage a list of karaoke songs.
 
 Things you may want to cover:
 
-* Ruby version
+~ruby 2.1.0p0
+
+~Rails 4.1.1
+
 
 * System dependencies
 
