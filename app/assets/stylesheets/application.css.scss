@@ -13,13 +13,30 @@
  *= require_tree .
  *= require_self
  */
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 li {
   list-style: none;
 }
-table {
-  width: 50%;
+
+table.songs {
+  width: 75%;
   margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.songs td, .songs th {
+  padding: 4px 10px;
+  border: solid 1px #AAA;
+}
+
+.songs th {
+  background: yellow;
   text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: red;
+  background: white;
 }

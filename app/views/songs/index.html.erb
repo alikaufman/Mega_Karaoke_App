@@ -1,34 +1,26 @@
 <h1>Welcome, <%= current_user.first_name %> </h1>
-<table>
-  <thead>
-    <tr>
-      <th>Artist</th>
-      <th>Title</th>
-      <th>Genre</th>
-      <th>Notes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
 
-    <% @songs.each do |song| %>
-      <tr>
-        <td><%= song.artist %></td>
-        <td><%= song.title %></td>
-        <td><%= song.genre %></td>
-        <td><%= song.notes %></td>
-        <td><%= link_to 'Show', song %></td>
-        <td><%= link_to 'Edit', edit_song_path(song) %></td>
-        <td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+<table class="songs">
+  <tr>
+    <th><%= sortable "artist" %></th>
+    <th><%= sortable "title" %></th>
+    <th><%= sortable "genre" %></th>
+  </tr>
+  <% for song in @songs %>
+  <% if song.user_id == current_user.id %>
+  <tr>
+    <td><%= song.artist %></td>
+    <td class="song_link">"<em><%= link_to song.title, song %><em>"</td>
+    <td><%= song.genre %></td>
+  </tr>
+  <% end %>
+  <% end %>
 </table>
-
 <br>
 
-<%= link_to 'New Song', new_song_path %>
+<%= link_to 'New Song', new_song_path %><br>
+<%= link_to 'Profile', root_path %>
 
 
 
