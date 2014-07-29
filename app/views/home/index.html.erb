@@ -1,11 +1,5 @@
-<h1>Welcome, <%= current_user.first_name %></h1>
-
-<ul>
-  <% current_user.songs.each do |song| %>
-  <li><%= song.artist %> '<%= song.title %>' </li>
-  <% end %>
-</ul>
-
-<%= link_to 'Songs', songs_path %>
-
-
+<h2>Profile</h2>
+<h3><%= current_user.first_name %> <%= current_user.last_name %></h3>
+<h4> <%= current_user.email %> </h4>
+<%= link_to 'Edit Profile', edit_user_registration_path %> |
+<%= link_to 'Back to Songs', songs_path %>
