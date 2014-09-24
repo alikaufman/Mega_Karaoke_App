@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140724234513) do
 
-  create_table "profiles", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.date     "birthday"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "songs", force: true do |t|
     t.string   "artist"
     t.string   "title"
