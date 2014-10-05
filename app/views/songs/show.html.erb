@@ -1,25 +1,14 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Artist:</strong>
-  <%= @song.artist %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @song.title %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @song.genre %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @song.notes %>
-</p>
-
+<div class="show text-center">
+<p>Artist</p>
+<h3><%= @song.artist %></h3>
+<p>Title</p>
+<h3><%= @song.title %></h3>
+<p>Genre</p>
+<h3><%= @song.genre %></h3>
+<p>Notes</p>
+<h3><%= @song.notes %></h3>
+</div>
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
 <%= link_to 'Delete', song_path(@song), method: :delete, data: { confirm: 'Are You Sure?' } %><br><br>

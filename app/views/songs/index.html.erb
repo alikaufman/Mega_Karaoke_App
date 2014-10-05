@@ -1,15 +1,15 @@
-<table class="songs">
+<table class="table">
   <tr>
-    <th><%= sortable "artist" %></th>
-    <th><%= sortable "title" %></th>
-    <th><%= sortable "genre" %></th>
+    <th class="marmelad"><%= sortable "artist" %></th>
+    <th class="marmelad"><%= sortable "title" %></th>
+    <th class="marmelad"><%= sortable "genre" %></th>
   </tr>
   <% for song in @songs %>
   <% if song.user_id == current_user.id %>
   <tr>
-    <td><%= song.artist %></td>
-    <td class="song_link">"<em><%= link_to song.title, song %><em>"</td>
-    <td><%= song.genre %></td>
+    <td class="marmelad"><%= song.artist %></td>
+    <td class="marmelad song_link">"<%= link_to song.title, song %>"</td>
+    <td class="marmelad"><%= song.genre %></td>
   </tr>
   <% end %>
   <% end %>
