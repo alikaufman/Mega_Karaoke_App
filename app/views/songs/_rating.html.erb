@@ -1,0 +1,9 @@
+<div class="rating">
+	<% if rating.present? %>
+		<% rating.times do %>
+			<%= icon('star') %>
+		<% end %>
+	<% else %>
+		not rated
+	<% end %>
+</div>
