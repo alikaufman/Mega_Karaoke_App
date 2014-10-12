@@ -6,6 +6,14 @@
 <h3><%= @song.title %></h3>
 <p>Genre</p>
 <h3><%= @song.genre %></h3>
+<p>Rating</p>
+<% if @song.rating == nil %>
+        unrated
+      <% else %>
+        <% @song.rating.times do %>
+          <i class="fa fa-star fa-lg"></i>
+        <% end %>
+      <% end %>
 <p>Notes</p>
 <h3><%= @song.notes %></h3>
 </div>

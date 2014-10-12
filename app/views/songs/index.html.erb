@@ -3,14 +3,26 @@
     <th class="marmelad"><%= sortable "artist" %></th>
     <th class="marmelad"><%= sortable "title" %></th>
     <th class="marmelad"><%= sortable "genre" %></th>
+    <th class="marmelad"><%= sortable "rating" %></th>
   </tr>
-  <% for song in @songs %>
-  <% if song.user_id == current_user.id %>
-  <tr>
-    <td class="marmelad"><%= song.artist %></td>
-    <td class="marmelad song_link">"<%= link_to song.title, song %>"</td>
-    <td class="marmelad"><%= song.genre %></td>
-  </tr>
-  <% end %>
-  <% end %>
+
+    <% for song in @songs %>
+      <% if song.user_id == current_user.id %>
+        <tr>
+          <td class="marmelad"><%= song.artist %></td>
+          <td class="marmelad song_link">"<%= link_to song.title, song %>"</td>
+          <td class="marmelad"><%= song.genre %></td>
+          <td>
+            <% if song.rating == nil %>
+              unrated
+            <% else %>
+              <% song.rating.times do %>
+                <i class="fa fa-star fa-lg"></i>
+              <% end %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  
 </table>

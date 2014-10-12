@@ -44,7 +44,7 @@ h1.heading {
 	text-shadow: 3px 3px 3px gray;
 	margin: 0;
 }
-span.cursive {
+.cursive {
 	font-family: 'Satisfy', cursive;
 }
 ul.nav-bar {
@@ -64,6 +64,9 @@ ul.nav-bar {
 .login {
 	padding-right: 3%;
 }
+.user_name {
+
+}
 .marmelad {
 	font-family: 'Marmelad', sans-serif;
 }
@@ -71,6 +74,7 @@ ul.nav-bar {
 	background: rgba(255,255,255,.8);
 	width: 80%;
 	margin: auto;
+	box-shadow: 1px 2px 2px black;
 }
 th {
 	font-family: 'Luckiest Guy', cursive;
@@ -87,4 +91,8 @@ a:link, a:active {
 }
 .container-title {
 	padding-top: 5%;
+}
+.fa-star {
+	color: orange;
+	text-shadow: 2px 2px 2px black;
 }
