@@ -10,28 +10,21 @@
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1 class="heading text-center"><span class="cursive">Monday</span>Marvellettes</h1>
+<h1 class="heading text-center"><span class="monday">Monday</span>Marvellettes</h1>
 <% if user_signed_in? %>
-  <ul class="nav-bar marmelad">
-    <li class="user_name cursive"><%= current_user.first_name %> <%= current_user.last_name %></li>
+  <ul class="nav-bar">
     <li><%= link_to 'Home', songs_path %></li>
     <li><%= link_to 'Profile', home_index_path %></li>
-    <li><%= link_to 'New Song', new_song_path %></li>
-    <li><%= link_to "Log out", destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li>
+    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
   </ul>
-    </div>
-  </div>
-    </nav>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Log in", new_user_session_path, :class => 'navbar-link'  %>
+  <p class="username">Logged in as <%= current_user.first_name %> <%= current_user.last_name %></p>
 <% end %>
-<div class="container">
+
 <%= yield %>
-</div>
+
 </body>
 </html>

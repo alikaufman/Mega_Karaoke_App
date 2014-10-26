@@ -18,81 +18,200 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-
-
 html { 
-  	background: asset_url('background.jpg') no-repeat fixed center;
-  	background-size: cover;
-  	margin: 0;
 }
+/* BODY begin */
 body {
-	margin: 0 auto;
-	height: 100%;
-	width: 70%;
-	background: rgba(255,255,255,.7);
+	margin: 1% auto;
 	font-size: 1.7em;
-	box-shadow: 3px 3px 4px black;
-	font-family: 'Marmelad', sans-serif;
+	font-family: 'Abel', sans-serif;
 	padding-bottom: 3%;
+	background: asset_url('background.jpg');
 }
-h1.heading {
-	width: 100%;
-	font-family: 'Luckiest Guy', cursive;
-	font-size: 4em;
-	padding: 2%;
-	padding-bottom: 1%;
-	text-shadow: 3px 3px 3px gray;
-	margin: 0;
-}
-.cursive {
-	font-family: 'Satisfy', cursive;
-}
-ul.nav-bar {
-	list-style-type: none;
-	width: 70%;
-	margin: 3% auto;
-}
-.nav-bar li {
-	display: inline;
-	float: left;
-	padding: 3%;
-	font-size: 2em;
-}
-.nav-bar a {
-	display: block;
-}
-.login {
-	padding-right: 3%;
-}
-.user_name {
 
-}
-.marmelad {
-	font-family: 'Marmelad', sans-serif;
-}
-.table {
-	background: rgba(255,255,255,.8);
-	width: 80%;
-	margin: auto;
-	box-shadow: 1px 2px 2px black;
-}
-th {
-	font-family: 'Luckiest Guy', cursive;
-	font-size: 1.6em;
-	color: #F01D24;
-}
 a:link, a:active {
 	text-decoration: none;
 	background: none;
 }
+/* BODY end*/
+
+/* HEADING begin */
+h1.heading {
+	width: 100%;
+	background: rgba(102,0,102,.2);
+	margin-top: 0;
+	border-top: 15px solid purple;
+	font-family: 'Luckiest Guy', cursive;
+	color: white;
+	font-size: 4em;
+	padding: 2%;
+	text-shadow: 5px 5px 5px #330066;
+	margin: 0;
+}
+.monday {
+	font-family: 'Satisfy', cursive;
+	text-shadow: 1px 1px 1px #330066;
+	color: purple;
+}
+/* HEADING end */
+/* CONTAINER begin */
+.container {
+	width: 40%;
+	padding: 2% 0;
+	margin-top: 3%;
+	background: white;
+	border: 1px solid purple;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #330066;
+}
+/* CONTAINER end */
+/* LOGIN/SIGNUP PAGE begin */
+.loginform {
+	width: 100%;
+}
+.signin {
+	font-family: 'Luckiest Guy', cursive;
+	color: white;
+	text-shadow: 3px 3px 3px #330066;
+	background: purple;
+	width: 100%;
+	text-align: center;
+	line-height: 2em;
+	margin-bottom: 6%;
+}
+.row {
+	margin-bottom: 3%;
+}
+.subform {
+	text-align: center;
+}
+.subform .btn {
+	background: purple;
+	color: white;
+	width: 20%;
+	font-size: 1.3em;
+}
+.resetpword {
+	text-align: center;
+}
+.resetpword .btn {
+	background: #330066;
+	color: white;
+	font-size: 1.3em;
+}
+.sharedlinks, .sharedlinks a{
+	color: #330066;
+}
+/* LOGIN/SIGNUP PAGE end */
+/* NAVBAR begin*/
+.username {
+	font-family: 'Satisfy', cursive;
+	text-align: right;
+	margin: 1% auto;
+	padding: 0 1%;
+	font-size: 1.4em;
+
+}
+ul.nav-bar {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	background: purple;
+	line-height: 3em;
+	li {
+		display: inline;
+		padding: 4%;
+	}
+	a, a:hover{
+		text-shadow: 2px 2px 2px #330066;
+		color: white;
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 1.5em;
+
+	}
+}
+/* NAVBAR end */
+
+/* INDEX TABLE begin */
+.index-container {
+	width: 70%;
+	padding: 2% 0;
+	margin: 1% auto;
+	background: white;
+	border: 1px solid #330066;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #330066;
+}
+.addsong {
+	background: purple;
+	padding: 1%;
+}
+.addsong a {
+	color: white;
+	text-shadow: 2px 2px 2px #330066;
+	font-family: 'Luckiest Guy', cursive;
+	margin-right: 5%;
+	font-size: 1.4em;
+}
+.addsong a:hover {
+	font-size: 1.5em;
+}
+.index-table {
+	width: 90%;
+	margin: 0 auto;
+}
+.index-table th {
+	font-size: 1.6em;
+	padding-left: 4%;
+	font-family: 'Satisfy', cursive;
+	font-weight: bold;
+}
+.sortable a {
+	color: purple;
+}
+.index-table th .current {
+  	padding-right: 17%;
+}
+.index-table th .asc {
+	color: purple;
+	background: asset_url('upArrow.jpg');
+	background-repeat: no-repeat;
+  	background-position: right;
+  	background-size: 30%;
+  	padding-right: 17%;
+}
+.index-table th .desc {
+	color: purple;
+	background: asset_url('downArrow.jpg');
+	background-repeat: no-repeat;
+  	background-position: right;
+  	background-size: 30%;
+  	padding-right: 17%;
+}
+.index-table-heading {
+}
+.index-table tr {
+	border-bottom: 1px solid #c0c0c0;
+}
+.index-table td {
+	padding: 2%;
+	padding-left: 4%;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
+}
+/* INDEX TABLE end */
+
+
 .show {
 	width: 70%;
 	margin: 0 auto;
 }
-.container-title {
-	padding-top: 5%;
-}
+
 .fa-star {
 	color: orange;
 	text-shadow: 2px 2px 2px black;
+}
+footer {
+	position: fixed bottom;
+	clear: both;
 }

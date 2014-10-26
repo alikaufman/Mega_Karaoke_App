@@ -1,23 +1,24 @@
-<table class="table">
-  <tr>
-    <th class="marmelad"><%= sortable "artist" %></th>
-    <th class="marmelad"><%= sortable "title" %></th>
-    <th class="marmelad"><%= sortable "genre" %></th>
-    <th class="marmelad"><%= sortable "rating" %></th>
+<div class="index-container">
+<p class="text-right addsong"><%= link_to 'Add a New Song', new_song_path %></p>
+<table class="index-table">
+  <tr class="index-table-heading">
+    <th class="sortable"><%= sortable "artist" %></th>
+    <th class="sortable"><%= sortable "title" %></th>
+    <th class="sortable"><%= sortable "genre" %></th>
+    <th class="sortable"><%= sortable "rating" %></th>
   </tr>
-
     <% for song in @songs %>
       <% if song.user_id == current_user.id %>
         <tr>
-          <td class="marmelad"><%= song.artist %></td>
-          <td class="marmelad song_link">"<%= link_to song.title, song %>"</td>
-          <td class="marmelad"><%= song.genre %></td>
+          <td class="artist"><%= song.artist %></td>
+          <td class="song_link">"<%= link_to song.title, song %>"</td>
+          <td class="genre"><%= song.genre %></td>
           <td>
             <% if song.rating == nil %>
               unrated
             <% else %>
               <% song.rating.times do %>
-                <i class="fa fa-star fa-lg"></i>
+                <i class="fa fa-star"></i>
               <% end %>
             <% end %>
           </td>
@@ -26,3 +27,4 @@
     <% end %>
   
 </table>
+</div>
