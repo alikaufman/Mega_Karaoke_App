@@ -22,7 +22,7 @@ html {
 }
 /* BODY begin */
 body {
-	margin: 1% auto;
+	margin: 0 auto;
 	font-size: 1.7em;
 	font-family: 'Abel', sans-serif;
 	padding-bottom: 3%;
@@ -95,6 +95,15 @@ h1.heading {
 	width: 20%;
 	font-size: 1.3em;
 }
+.subform .btn:hover {
+	box-shadow: 2px 2px 2px gray;
+}
+.subform a {
+	font-weight: bold;
+}
+.subform a:hover {
+	text-decoration: underline;
+}
 .resetpword {
 	text-align: center;
 }
@@ -153,12 +162,12 @@ ul.nav-bar {
 .addsong a {
 	color: white;
 	text-shadow: 2px 2px 2px #330066;
-	font-family: 'Luckiest Guy', cursive;
+	font-family: 'Abel', sans-serif;
 	margin-right: 5%;
 	font-size: 1.4em;
 }
 .addsong a:hover {
-	font-size: 1.5em;
+	text-decoration: underline;
 }
 .index-table {
 	width: 90%;
