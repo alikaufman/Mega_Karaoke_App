@@ -10,27 +10,22 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :artist %><br>
-    <%= f.text_field :artist %>
+  <div class="row">
+    <div><%= f.text_field :artist, placeholder: 'Artist', class: "col-xs-8 col-xs-offset-2 input-lg" %></div>
   </div>
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="row">
+    <div><%= f.text_field :title, placeholder: 'Title', class: "col-xs-8 col-xs-offset-2 input-lg" %></div>
   </div>
-  <div class="field">
-    <%= f.label :genre %><br>
-    <%= f.text_field :genre %>
+  <div class="row">
+    <div><%= f.text_field :genre, placeholder: 'Genre', class: "col-xs-8 col-xs-offset-2 input-lg" %></div>
   </div>
-  <div class="field">
-    <%= f.label :notes %><br>
-    <%= f.text_area :notes %>
+  <div class="row">
+    <div><%= f.text_area :notes, placeholder: 'Notes', class: "col-xs-8 col-xs-offset-2 input-lg" %></div>
   </div>
   <div class="field">
     <%= f.label :rating %><br>
     <%= f.text_area :rating %> 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions subform">
+    <%= f.submit "Create Song", class: "btn" %>
   </div>
 <% end %>
