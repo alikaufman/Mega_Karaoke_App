@@ -180,23 +180,13 @@ ul.nav-bar {
 	color: purple;
 }
 .index-table th .current {
-  	padding-right: 17%;
+  	
 }
 .index-table th .asc {
 	color: purple;
-	background: asset_url('upArrow.jpg');
-	background-repeat: no-repeat;
-  	background-position: right;
-  	background-size: 30%;
-  	padding-right: 17%;
 }
 .index-table th .desc {
 	color: purple;
-	background: asset_url('downArrow.jpg');
-	background-repeat: no-repeat;
-  	background-position: right;
-  	background-size: 30%;
-  	padding-right: 17%;
 }
 .index-table-heading {
 }
