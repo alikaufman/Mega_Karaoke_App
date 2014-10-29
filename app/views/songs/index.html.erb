@@ -1,5 +1,4 @@
 <div class="index-container">
-<p class="text-right addsong"><%= link_to 'Add a New Song', new_song_path %></p>
 <table class="index-table">
   <tr class="index-table-heading">
     <th class="sortable"><%= sortable "artist" %></th>
@@ -11,7 +10,7 @@
       <% if song.user_id == current_user.id %>
         <tr>
           <td class="artist"><%= song.artist %></td>
-          <td class="song_link">"<%= link_to song.title, song %>"</td>
+          <td class="song-link"><%= link_to song.title, song %></td>
           <td class="genre"><%= song.genre %></td>
           <td>
             <% if song.rating == nil %>

@@ -14,17 +14,18 @@
   <link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1 class="heading text-center"><span class="monday">Monday</span>Marvellettes</h1>
 <% if user_signed_in? %>
-  <ul class="nav-bar">
+<div></div>
+  <ul class="navgbar">
+    <li class="username">Logged in as <%= current_user.first_name %> <%= current_user.last_name %></li>
     <li><%= link_to 'Home', songs_path %></li>
     <li><%= link_to 'Profile', home_index_path %></li>
+    <li><%= link_to 'Add a New Song', new_song_path %></li>
     <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
   </ul>
-  <p class="username">Logged in as <%= current_user.first_name %> <%= current_user.last_name %></p>
 <% end %>
-
+<h1 class="heading text-center"><span class="monday">Monday</span>Marvellettes</h1>
 <%= yield %>
-
+<footer>Created by Ali Kaufman 2014</footer>
 </body>
 </html>

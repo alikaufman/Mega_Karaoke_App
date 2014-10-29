@@ -19,69 +19,80 @@
 @import "font-awesome";
 
 html { 
+	background: asset_url('background.jpg');
 }
 /* BODY begin */
 body {
+	width: 70%;
 	margin: 0 auto;
 	font-size: 1.7em;
 	font-family: 'Abel', sans-serif;
-	padding-bottom: 3%;
-	background: asset_url('background.jpg');
+	background: transparent;
 }
 
-a:link, a:active {
+a:link {
 	text-decoration: none;
 	background: none;
 }
 /* BODY end*/
+/* NAVBAR begin*/
+.username {
+
+}
+ul.navgbar {
+	list-style-type: none;
+	margin: 0 auto;
+	background: #A30C50;
+	padding: 1%;
+	li {
+		display: inline;
+		font-family: 'Abel', sans-serif;
+		font-size: 1.4em;
+		color: black;
+	}
+	a {
+		color: #D1D1D1;
+		font-weight: bold;
+		padding: 1%;
+	}
+	a:hover {
+		background: rgba(0,0,0,.6);
+	}
+}
+/* NAVBAR end */
 
 /* HEADING begin */
 h1.heading {
-	width: 100%;
-	background: rgba(102,0,102,.2);
-	margin-top: 0;
-	border-top: 15px solid purple;
-	border-bottom: 15px solid purple;
-	font-family: 'Luckiest Guy', cursive;
-	color: white;
-	font-size: 4em;
 	padding: 2%;
-	text-shadow: 5px 5px 5px #330066;
-	margin: 0;
+	border: 1px solid #A30C50;
+	border-radius: 10px;
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 4em;
+	text-shadow: 2px 2px 2px #A30C50;
+	background: rgba(0,0,0,.2);
 }
 .monday {
 	font-family: 'Satisfy', cursive;
-	text-shadow: 1px 1px 1px #330066;
-	color: purple;
+	text-shadow: none;
 }
 /* HEADING end */
 /* CONTAINER begin */
-.container {
-	width: 40%;
+.loginform {
+	width: 60%;
+	margin: 0 auto;
 	padding: 2% 0;
-	margin-top: 3%;
-	background: white;
-	border: 1px solid purple;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #330066;
+	background: #D1D1D1;
 }
 .container a {
 	color: #330066;
 }
 /* CONTAINER end */
 /* LOGIN/SIGNUP PAGE begin */
-.loginform {
-	width: 100%;
-}
+
 .signin {
 	font-family: 'Luckiest Guy', cursive;
-	color: white;
-	text-shadow: 3px 3px 3px #330066;
-	background: purple;
-	width: 100%;
+	text-shadow: 3px 3px 3px #A30C50;
 	text-align: center;
-	line-height: 2em;
-	margin-bottom: 6%;
 }
 .row {
 	margin-bottom: 3%;
@@ -90,7 +101,7 @@ h1.heading {
 	text-align: center;
 }
 .subform .btn {
-	background: purple;
+	background: #A30C50;
 	color: white;
 	width: 20%;
 	font-size: 1.3em;
@@ -100,60 +111,31 @@ h1.heading {
 }
 .subform a {
 	font-weight: bold;
+	color: black;
 }
 .subform a:hover {
-	text-decoration: underline;
+	color: #A30C50;
 }
 .resetpword {
 	text-align: center;
 }
 .resetpword .btn {
-	background: purple;
+	background: #A30C50;
 	color: white;
 	font-size: 1.3em;
 }
 /* LOGIN/SIGNUP PAGE end */
-/* NAVBAR begin*/
-.username {
-	font-family: 'Satisfy', cursive;
-	text-align: right;
-	margin: 1% auto;
-	padding: 0 1%;
-	font-size: 1.4em;
-
-}
-ul.nav-bar {
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-	background: purple;
-	line-height: 2em;
-	li {
-		display: inline;
-		padding: 4%;
-	}
-	a, a:hover{
-		text-shadow: 2px 2px 2px #330066;
-		color: white;
-		font-family: 'Luckiest Guy', cursive;
-		font-size: 1.5em;
-
-	}
-}
-/* NAVBAR end */
 
 /* INDEX TABLE begin */
 .index-container {
-	width: 70%;
+	width: 100%;
 	padding: 2% 0;
 	margin: 1% auto;
 	background: white;
-	border: 1px solid #330066;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #330066;
+	border: 1px solid #A30C50;
 }
 .addsong {
-	background: purple;
+	background: #A30C50;
 	padding: 1%;
 }
 .addsong a {
@@ -177,27 +159,34 @@ ul.nav-bar {
 	font-weight: bold;
 }
 .sortable a {
-	color: purple;
+	color: #A30C50;
 }
 .index-table th .current {
-  	
+  	text-shadow: 1px 1px 1px black;
 }
 .index-table th .asc {
-	color: purple;
+	color: #A30C50;
 }
 .index-table th .desc {
-	color: purple;
+	color: #A30C50;
 }
 .index-table-heading {
 }
 .index-table tr {
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px solid #D1D1D1;
 }
 .index-table td {
 	padding: 2%;
 	padding-left: 4%;
 	font-family: 'Abel', sans-serif;
 	font-size: 1.2em;
+}
+.song-link a {
+	color: black;
+	font-style: italic;
+}
+.song-link a:hover {
+	color: #A30C50;
 }
 /* INDEX TABLE end */
 
@@ -212,6 +201,9 @@ ul.nav-bar {
 	text-shadow: 2px 2px 2px black;
 }
 footer {
-	position: fixed bottom;
-	clear: both;
+	background: #A30C50;
+	font-weight: bold;
+	color: #D1D1D1;
+	text-align: center;
+	padding: 1%;
 }
