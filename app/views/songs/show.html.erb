@@ -1,22 +1,20 @@
-<div class="show text-center">
-<p>Artist</p>
-<h3><%= @song.artist %></h3>
-<p>Title</p>
-<h3><%= @song.title %></h3>
-<p>Genre</p>
-<h3><%= @song.genre %></h3>
-<p>Rating</p>
-<% if @song.rating == nil %>
-        unrated
-      <% else %>
-        <% @song.rating.times do %>
-          <i class="fa fa-star fa-lg"></i>
-        <% end %>
-      <% end %>
-<p>Notes</p>
-<h3><%= @song.notes %></h3>
+<div class="index-container">
+	<div class="loginform text-center">
+		<h3><%= @song.artist %></h3>
+		<h2 class="song-title">"<%= @song.title %>"</h2>
+		<h3><%= @song.genre %></h3>
+		<% if @song.rating == nil %>
+        		unrated
+      		<% else %>
+        		<% @song.rating.times do %>
+          			<i class="fa fa-star fa-lg"></i>
+        		<% end %>
+      	<% end %>
+      	<p><%= @song.notes %></p>
+		<div class="subform">
+			<%= link_to 'Edit', edit_song_path(@song) %> |
+			<%= link_to 'Delete', song_path(@song), method: :delete, data: { confirm: 'Are You Sure?' } %><br>
+			<%= link_to 'Back', songs_path %>
+		</div>
+	</div>
 </div>
-
-<%= link_to 'Edit', edit_song_path(@song) %> |
-<%= link_to 'Delete', song_path(@song), method: :delete, data: { confirm: 'Are You Sure?' } %><br><br>
-<%= link_to 'Back', songs_path %>
