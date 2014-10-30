@@ -55,7 +55,7 @@ ul.navgbar {
 		padding: 4px;
 	}
 	a:hover {
-		background: rgba(0,0,0,.4);
+		background: rgba(0,0,0,.2);
 	}
 }
 /* NAVBAR end */
@@ -80,8 +80,8 @@ h1.heading {
 
 .signin {
 	font-family: 'Luckiest Guy', cursive;
-	text-shadow: 3px 3px 3px #A30C50;
 	text-align: center;
+	color: #A30C50;
 }
 .row {
 	margin-bottom: 3%;
@@ -143,7 +143,7 @@ h1.heading {
 .index-table th {
 	font-size: 1.6em;
 	padding-left: 4%;
-	font-family: 'Satisfy', cursive;
+	font-family: 'Josefin Sans', cursive;
 	font-weight: bold;
 }
 .sortable a {
