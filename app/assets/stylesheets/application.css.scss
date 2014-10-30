@@ -170,11 +170,10 @@ h1.heading {
 	font-size: 1.2em;
 }
 .song-link a {
-	color: black;
-	font-style: italic;
+	color: #A30C50;
 }
 .song-link a:hover {
-	color: #A30C50;
+	color: black;
 }
 .fa-star {
 	color: orange;
@@ -182,8 +181,9 @@ h1.heading {
 }
 /* INDEX TABLE end */
 
-.song-title {
-	color: #A30C50;
+#song_rating {
+	background: white;
+
 }
 
 /* FOOTER begin */
