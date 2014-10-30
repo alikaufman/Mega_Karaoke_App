@@ -194,3 +194,31 @@ footer {
 	padding: 1%;
 }
 /* FOOTER end */
+
+/* ERRORS begin */
+#error_explanation {
+	border-radius: 10px;
+	background: rgba(255,0,0, .2);
+	color: red;
+	margin: 2% auto;
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		background: red;
+	}
+	ul {
+		li {
+			list-style: none;
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+}
+.field_with_errors {
+	padding: 0;
+	background: rgba(255,0,0, .2);
+	width: 90%;
+	margin: 1% auto;
+	border: 1px solid red;
+}
+/* ERRORS end */
