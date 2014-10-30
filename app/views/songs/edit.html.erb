@@ -1,9 +1,11 @@
 <div class="index-container"> 
-	<h2 class="signin">Edit Song</h2>
+	<div class="loginform">
+		<h2 class="signin">Edit Song</h2>
 
-	<%= render 'form' %>
+		<%= render 'form' %>
 
-	<div class="text-center subform">
-		<%= link_to 'Show', @song %> | <%= link_to 'Back', songs_path %>
+		<div class="text-center subform">
+			<%= link_to 'Show', @song %> | <%= link_to 'Back', songs_path %>
+		</div>
 	</div>
 </div>
