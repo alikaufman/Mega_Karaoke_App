@@ -12,7 +12,7 @@
           <td class="artist"><%= song.artist %></td>
           <td class="song-link"><%= link_to song.title, song %></td>
           <td class="genre"><%= song.genre %></td>
-          <td>
+          <td class="rating">
             <% if song.rating == nil %>
               unrated
             <% else %>

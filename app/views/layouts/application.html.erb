@@ -15,7 +15,7 @@
 <% if user_signed_in? %>
 <div></div>
   <ul class="navgbar">
-    <li class="username">Logged in as <%= current_user.first_name %> <%= current_user.last_name %></li>
+    <li class="username"><%= current_user.first_name %> <%= current_user.last_name %></li>
     <li><%= link_to 'Home', songs_path %></li>
     <li><%= link_to 'Profile', home_index_path %></li>
     <li><%= link_to 'Add a New Song', new_song_path %></li>

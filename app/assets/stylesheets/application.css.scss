@@ -92,7 +92,7 @@ h1.heading {
 .subform .btn {
 	background: #A30C50;
 	color: white;
-	width: 20%;
+	width: 24%;
 	font-size: 1.3em;
 }
 .subform .btn:hover {
@@ -141,7 +141,7 @@ h1.heading {
 }
 .index-table th {
 	font-size: 1.6em;
-	padding-left: 4%;
+	padding-left: 2%;
 	font-family: 'Josefin Sans', cursive;
 	font-weight: bold;
 }
@@ -157,14 +157,12 @@ h1.heading {
 .index-table th .desc {
 	color: #A30C50;
 }
-.index-table-heading {
-}
 .index-table tr {
 	border-bottom: 1px solid #D1D1D1;
 }
 .index-table td {
 	padding:  1% 2%;
-	padding-left: 4%;
+	padding-left: 2%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.2em;
 }
@@ -224,3 +222,81 @@ footer {
 	border: 1px solid red;
 }
 /* ERRORS end */
+@media (max-width: 1000px) {
+	body {
+		font-size: 1.3em;
+	}
+	ul.navgbar {
+		li {
+			font-size: 1em;
+		}
+	}
+	.index-table {
+		width: 96%;
+	}
+	td.rating {
+		padding-left: 0;
+	}
+}
+@media (max-width: 750px) {
+	body {
+		width: 90%;
+	}
+	h1.heading {
+		font-size: 3em;
+	}
+	.index-table {
+		width: 100%;
+	}
+}
+@media (max-width: 500px) {
+
+	body {
+		width: 100%;
+	}
+	.loginform {
+		width: 100%;
+		background-color: white;
+		border-radius: 0;
+	}
+	h1.heading {
+		font-size: 2em;
+		border-radius: 0;
+	}
+	.index-container {
+		border-radius: 0;
+	}
+	.index-table {
+		font-size: .8em;
+		width: 100%;
+		padding-left: 1%;
+	}
+	.index-table tr {
+		padding: 0 1%;
+	}
+	.index-table td {
+		padding: 0;
+		padding-left: 5px;
+	}
+	ul.navgbar {
+		li {
+			padding: 1% 0;
+		}
+		a {
+			padding-left: 2px;
+			font-weight: normal;
+		}
+
+	}
+	.index-table th {
+		font-size: 1em;
+	}
+	td.genre {
+		font-size: .8em;
+	}
+}
+@media (max-width: 400px) {
+	.index-table {
+		font-size: .7em;
+	}
+}
