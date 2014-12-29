@@ -180,7 +180,6 @@ h1.heading {
 
 #song_rating {
 	background: white;
-
 }
 .song-title {
 	color: #A30C50;
@@ -222,6 +221,11 @@ footer {
 	border: 1px solid red;
 }
 /* ERRORS end */
+@media (max-width: 1250px) {
+	td.rating {
+		width: 145px;
+	}
+}
 @media (max-width: 1000px) {
 	body {
 		font-size: 1.3em;
@@ -234,9 +238,7 @@ footer {
 	.index-table {
 		width: 96%;
 	}
-	td.rating {
-		padding-left: 0;
-	}
+
 }
 @media (max-width: 750px) {
 	body {
