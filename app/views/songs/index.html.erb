@@ -1,10 +1,9 @@
-<div class="index-container">
 <table class="index-table">
   <tr class="index-table-heading">
-    <th class="sortable"><%= sortable "artist" %></th>
-    <th class="sortable"><%= sortable "title" %></th>
-    <th class="sortable"><%= sortable "genre" %></th>
-    <th class="sortable"><%= sortable "rating" %></th>
+    <th class="sortable"><%= sortable "artist" %> <i class="fa fa-sort"></i></th>
+    <th class="sortable"><%= sortable "title" %> <i class="fa fa-sort"></i></th>
+    <th class="sortable"><%= sortable "genre" %> <i class="fa fa-sort"></i></th>
+    <th class="sortable"><%= sortable "rating" %> <i class="fa fa-sort"></i></th>
   </tr>
     <% for song in @songs %>
       <% if song.user_id == current_user.id %>
@@ -24,6 +23,4 @@
         </tr>
       <% end %>
     <% end %>
-  
 </table>
-</div>

@@ -16,13 +16,13 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
   <div class="row">
-    <div><%= f.password_field :password, autocomplete: "off", placeholder: 'Password', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><br><i class="col-xs-8 col-xs-offset-2">Leave blank if you don't want to change</i></div>
+    <div><%= f.password_field :password, autocomplete: "off", placeholder: 'Password', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><br><i class="col-xs-8 col-xs-offset-2 caption">Leave blank if you don't want to change</i></div>
   </div>
   <div class="row">
-    <div><%= f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password Confirmation', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><br><i class="col-xs-8 col-xs-offset-2">Leave blank if you don't want to change</i></div>
+    <div><%= f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password Confirmation', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><br><i class="col-xs-8 col-xs-offset-2 caption">Leave blank if you don't want to change</i></div>
   </div>
   <div class="row">
-    <div><%= f.password_field :current_password, autocomplete: "off", placeholder: 'Current Password', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><i class="col-xs-8 col-xs-offset-2">(we need your current password to confirm your changes)</i></div>
+    <div><%= f.password_field :current_password, autocomplete: "off", placeholder: 'Current Password', class: "col-xs-8 col-xs-offset-2 fname input-lg" %><i class="col-xs-8 col-xs-offset-2 caption">Current password is needed to confirm changes</i></div>
   </div>
   <div class="subform"><%= f.submit "Update", class: 'btn' %><br>
 <% end %>

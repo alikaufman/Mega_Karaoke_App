@@ -1,16 +1,33 @@
 <div class="index-container">
-	<div class="loginform text-center">
-		<h3><%= @song.artist %></h3>
-		<h2 class="song-title">"<%= @song.title %>"</h2>
-		<h3><%= @song.genre %></h3>
-		<% if @song.rating == nil %>
-        		unrated
-      		<% else %>
-        		<% @song.rating.times do %>
-          			<i class="fa fa-star fa-lg"></i>
-        		<% end %>
-      	<% end %>
-      	<p><%= @song.notes %></p>
+	<div class="loginform">
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3 tag">artist</div>
+			<div class="col-md-8 data"><%= @song.artist %></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3 tag">title</div>
+			<div class="col-md-8 song-title data"><%= @song.title %></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3 tag">genre</div>
+			<div class="col-md-8 data"><%= @song.genre %></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3 tag">rating</div>
+			<div class="col-md-8 data">
+				<% if @song.rating == nil %>
+        			unrated
+      			<% else %>
+        			<% @song.rating.times do %>
+          				<i class="fa fa-star fa-lg"></i>
+        			<% end %>
+      			<% end %>
+      		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3 tag">notes</div>
+			<div class="col-md-8 data"><%= @song.notes %></div>
+		</div>
 		<div class="subform">
 			<%= link_to 'Edit', edit_song_path(@song) %> |
 			<%= link_to 'Delete', song_path(@song), method: :delete, data: { confirm: 'Are You Sure?' } %><br>

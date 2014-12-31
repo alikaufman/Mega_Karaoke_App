@@ -27,7 +27,7 @@ body {
 	margin: 0 auto;
 	font-size: 1.7em;
 	background: transparent;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Cabin Sketch', cursive;
 }
 
 a:link {
@@ -39,14 +39,15 @@ a:link {
 /* NAVBAR begin*/
 ul.navgbar {
 	list-style-type: none;
+	width: 90%;
 	margin: 0 auto;
-	background: #A30C50;
+	font-family: 'Fredericka the Great', cursive;
 	padding: 1%;
+	text-align: center;
+	background: black;
 	li {
 		display: inline;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 1.4em;
-		color: black;
+		font-size: 1.6em;
 		padding: 1%;
 	}
 	a {
@@ -55,7 +56,7 @@ ul.navgbar {
 		padding: 4px;
 	}
 	a:hover {
-		background: rgba(0,0,0,.2);
+		text-shadow: 1px 1px 1px #A30C50;
 	}
 }
 /* NAVBAR end */
@@ -63,15 +64,11 @@ ul.navgbar {
 /* HEADING begin */
 h1.heading {
 	padding: 2%;
-	border: 1px solid #A30C50;
-	border-radius: 10px;
-	font-family: 'Luckiest Guy', cursive;
-	font-size: 4em;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5em;
 	text-shadow: 2px 2px 2px #A30C50;
-	background: rgba(0,0,0,.2);
 }
 .monday {
-	font-family: 'Satisfy', cursive;
 	text-shadow: none;
 }
 /* HEADING end */
@@ -79,7 +76,7 @@ h1.heading {
 /* LOGIN/SIGNUP PAGE begin */
 
 .signin {
-	font-family: 'Luckiest Guy', cursive;
+	
 	text-align: center;
 	color: #A30C50;
 }
@@ -116,12 +113,9 @@ h1.heading {
 
 /* INDEX CONTAINER begin */
 .index-container {
-	width: 100%;
-	padding: 2% 0;
+	width: 90%;
 	margin: 1% auto;
-	background: white;
-	border: 1px solid #A30C50;
-	border-radius: 10px;
+	background: transparent;
 }
 /* INDEX CONTAINER end */
 
@@ -131,6 +125,8 @@ h1.heading {
 	margin: 0 auto;
 	padding: 2% 0;
 	background: #D1D1D1;
+	border-right: 1px solid #A30C50;
+	border-left: 1px solid #A30C50;
 }
 /* LOGINFORM end */
 
@@ -138,11 +134,12 @@ h1.heading {
 .index-table {
 	width: 90%;
 	margin: 0 auto;
+	border-right: 1px solid #A30C50;
+	border-left: 1px solid #A30C50;
 }
 .index-table th {
 	font-size: 1.6em;
 	padding-left: 2%;
-	font-family: 'Josefin Sans', cursive;
 	font-weight: bold;
 }
 .sortable a {
@@ -159,11 +156,12 @@ h1.heading {
 }
 .index-table tr {
 	border-bottom: 1px solid #D1D1D1;
+	background: rgba(255,255,255,.5);
 }
 .index-table td {
 	padding:  1% 2%;
 	padding-left: 2%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Cabin Sketch', cursive;
 	font-size: 1.2em;
 }
 .song-link a {
@@ -176,6 +174,9 @@ h1.heading {
 	color: orange;
 	text-shadow: 2px 2px 2px black;
 }
+.fa-sort {
+	font-size: 75%;
+}
 /* INDEX TABLE end */
 
 #song_rating {
@@ -184,11 +185,18 @@ h1.heading {
 .song-title {
 	color: #A30C50;
 }
+.tag {
+	font-family: 'Fredericka the Great', cursive;
+}
+.data {
 
+}
+.caption {
+	font-size: 75%;
+	font-style: normal;
+}
 /* FOOTER begin */
 footer {
-	background: #A30C50;
-	color: #D1D1D1;
 	text-align: center;
 	padding: 1%;
 }
@@ -295,6 +303,9 @@ footer {
 	}
 	td.genre {
 		font-size: .8em;
+	}
+	td.rating {
+		width: 100px;
 	}
 }
 @media (max-width: 400px) {
