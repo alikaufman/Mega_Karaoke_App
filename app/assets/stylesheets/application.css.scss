@@ -39,12 +39,12 @@ a:link {
 /* NAVBAR begin*/
 ul.navgbar {
 	list-style-type: none;
-	width: 90%;
 	margin: 0 auto;
 	font-family: 'Fredericka the Great', cursive;
 	padding: 1%;
 	text-align: center;
 	background: black;
+	width: 90%;
 	li {
 		display: inline;
 		font-size: 1.6em;
@@ -63,7 +63,7 @@ ul.navgbar {
 
 /* HEADING begin */
 h1.heading {
-	padding: 2%;
+	padding: 0 2%;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 5em;
 	text-shadow: 2px 2px 2px #A30C50;
@@ -130,6 +130,20 @@ h1.heading {
 }
 /* LOGINFORM end */
 
+.get-started {
+	width: 90%;
+	margin: 2% auto;
+	background: rgba(255,255,255,.5);
+	border-right: 1px solid #A30C50;
+	border-left: 1px solid #A30C50;
+	padding:  3% 2%;
+	a {
+		color: #A30C50;
+	}
+	a:hover {
+		text-shadow: 1px 1px 1px black;
+	}
+}
 /* INDEX TABLE begin */
 .index-table {
 	width: 90%;
